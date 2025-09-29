@@ -19,27 +19,6 @@ Tables:
 - `subscriptions(sub_id PK, customer_id FK, start_date, end_date, amount)`
 - `watch_history(watch_id PK, customer_id FK, video_id FK, watch_date, hours_watched)`
 
-## ER diagram:
-+-------------+      +---------------+     +-----------------+
-|  customers  |1----<| subscriptions |     |  watch_history  |
-|-------------|      |---------------|     |-----------------|
-| customer_id |      | sub_id (PK)   |     | watch_id (PK)   |
-| full_name   |      | customer_id FK|---->| customer_id FK  |
-| region      |      | start_date    |     | video_id  FK    |
-| signup_date |      | end_date      |     | watch_date      |
-+-------------+      | amount        |     | hours_watched   |
-                     +---------------+     +-----------------+
-                             ^
-                             |
-                             |
-                        +---------+
-                        | videos  |
-                        |---------|
-                        | video_id|
-                        | title   |
-                        | category|
-                        +---------+ 
-
 ---
 
 ## Success criteria (exactly five measurable goals)
