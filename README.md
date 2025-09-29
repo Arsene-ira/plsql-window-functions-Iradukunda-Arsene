@@ -19,7 +19,7 @@ Tables:
 - `subscriptions(sub_id PK, customer_id FK, start_date, end_date, amount)`
 - `watch_history(watch_id PK, customer_id FK, video_id FK, watch_date, hours_watched)`
 
-##ER diagram:
+## ER diagram:
 +-------------+      +---------------+     +-----------------+
 |  customers  |1----<| subscriptions |     |  watch_history  |
 |-------------|      |---------------|     |-----------------|
